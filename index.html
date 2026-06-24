@@ -150,7 +150,7 @@
   <!-- ============ BUILD ============ -->
   <section class="panel active" id="build">
     <h2 class="section">Build a badge set for your assignment</h2>
-    <p class="lead">Pick what's allowed for each category. Toggle off anything that doesn't apply. The live preview on the right updates instantly &mdash; then copy the HTML into Blackboard or download it as a file.</p>
+    <p class="lead">Pick what's allowed for each category. Toggle off anything that doesn't apply. The live preview on the right updates instantly &mdash; then copy the HTML into Canvas or download it as a file.</p>
 
     <div class="builder">
       <div id="cat-list"><!-- category cards injected --></div>
@@ -163,12 +163,12 @@
           </div>
           <div class="preview-card" id="previewCard"></div>
           <div class="actions">
-            <button class="btn primary" id="copyBtn">Copy HTML for Blackboard</button>
+            <button class="btn primary" id="copyBtn">Copy HTML for Canvas</button>
             <button class="btn ghost" id="dlBtn">Download as .html</button>
             <button class="btn ghost" id="pngBtn">Download as image (PNG)</button>
           </div>
           <textarea class="code" id="codeOut" readonly aria-label="Generated HTML"></textarea>
-          <p class="hint">Paste using Blackboard's <b>HTML / source-code</b> button (the <code>&lt;&gt;</code> icon) in any Item, Document, or Description editor. The snippet is fully self-contained &mdash; no links or scripts.</p>
+          <p class="hint">Paste using Canvas' <b>HTML / source-code</b> button (the <code>&lt;&gt;</code> icon) in any Item, Document, or Description editor. The snippet is fully self-contained &mdash; no links or scripts.</p>
         </div>
       </div>
     </div>
@@ -192,28 +192,16 @@
   <section class="panel" id="howto">
     <h2 class="section">How to use these icons</h2>
     <div class="howto">
-      <h3>Option A &mdash; Paste into Blackboard (fastest)</h3>
+      <h3>Option A &mdash; Paste into Canvas (fastest)</h3>
       <ol>
-        <li>Build your set on the <b>Build a Badge Set</b> tab and click <b>Copy HTML for Blackboard</b>.</li>
+        <li>Build your set on the <b>Build a Badge Set</b> tab and click <b>Copy HTML for Canvas</b>.</li>
         <li>In your course, create or edit an <b>Item / Document</b> (or an assignment's Description).</li>
-        <li>In the content editor toolbar, click the <b>source code</b> button &mdash; the <code>&lt;&gt;</code> icon (in Ultra it's under the <kbd>+</kbd> / &ldquo;Insert/Edit HTML&rdquo; menu).</li>
+        <li>In the content editor toolbar, click the <b>source code</b> button &mdash; the <code>&lt;&gt;</code> icon</li>
         <li><b>Paste</b> the HTML and save. The badges render inline with your assignment.</li>
       </ol>
-      <div class="callout">The pasted snippet uses only inline styles and inline SVG &mdash; no external files, fonts, or JavaScript &mdash; so it survives Blackboard's HTML sanitizer on both <b>Original</b> and <b>Ultra</b>.</div>
+      <div class="callout">The pasted snippet uses only inline styles and inline SVG &mdash; no external files, fonts, or JavaScript &mdash; so it survives Canvas' HTML sanitizer on both <b>Original</b> and <b>Ultra</b>.</div>
 
-      <h3>Option B &mdash; Import the SCORM package</h3>
-      <ol>
-        <li>Download <code>olemiss-integrity-icons-scorm.zip</code> (provided with this package).</li>
-        <li>In your course: <b>Build Content &rarr; Content Package (SCORM)</b> (Original) or <b>Content &rarr; Upload &rarr; SCORM</b> (Ultra).</li>
-        <li>Upload the zip and accept the defaults. It appears as an interactive item students can open.</li>
-      </ol>
-
-      <h3>Option C &mdash; Host the whole site on GitHub Pages</h3>
-      <ol>
-        <li>Create a new GitHub repository and upload this folder's contents (keep <code>index.html</code> at the root).</li>
-        <li>Repo <b>Settings &rarr; Pages</b>, set <b>Source</b> to <code>main</code> branch / <code>/ (root)</code>, save.</li>
-        <li>Your live builder publishes at <code>https://&lt;username&gt;.github.io/&lt;repo&gt;/</code> &mdash; share it with faculty.</li>
-      </ol>
+      
 
       <h3>Attribution</h3>
       <p>The AI category mirrors the <a href="https://aiassessmentscale.com/" target="_blank" rel="noopener">AI Assessment Scale (AIAS)</a> by Perkins, Furze, Roe &amp; MacVaugh, used under <b>CC BY-NC-SA 4.0</b>. Keep the attribution line that appears at the bottom of every generated badge set.</p>
@@ -463,8 +451,8 @@ function buildEmbed(items,title){
 document.getElementById('aname').addEventListener('input',renderPreview);
 document.getElementById('copyBtn').addEventListener('click',function(){
   const ta=document.getElementById('codeOut'); ta.select();
-  navigator.clipboard.writeText(ta.value).then(()=>{this.textContent='Copied ✓';setTimeout(()=>this.textContent='Copy HTML for Blackboard',1600);})
-  .catch(()=>{document.execCommand('copy');this.textContent='Copied ✓';setTimeout(()=>this.textContent='Copy HTML for Blackboard',1600);});
+  navigator.clipboard.writeText(ta.value).then(()=>{this.textContent='Copied ✓';setTimeout(()=>this.textContent='Copy HTML for Canvas',1600);})
+  .catch(()=>{document.execCommand('copy');this.textContent='Copied ✓';setTimeout(()=>this.textContent='Copy HTML for Canvas',1600);});
 });
 document.getElementById('dlBtn').addEventListener('click',function(){
   const html='<!DOCTYPE html><html><head><meta charset="utf-8"><title>Assignment Guidelines</title></head><body style="margin:24px;">'+document.getElementById('codeOut').value+'</body></html>';
