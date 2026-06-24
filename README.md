@@ -1,16 +1,15 @@
-# University of Mississippi — Academic Integrity Icons
+# University of South Alabama — Academic Integrity Icons
 
 A faculty resource for stating, at a glance, what students may and may not do on an
 assignment. Inspired by the academic-integrity icon table approach used at other
-institutions, restyled in University of Mississippi colors (Oxford navy `#14213D`,
-Lyceum red `#CE1126`), and extended with **nuance sub-menus** so each rule can be more
+institutions, restyled in University of South Alabama colors, and extended with **nuance sub-menus** so each rule can be more
 than a simple yes/no. The **AI** category is driven by the
 [AI Assessment Scale (AIAS)](https://aiassessmentscale.com/).
 
 ## What's in here
 
 ```
-olemiss-academic-integrity-icons/
+academic_integrity_icons_usa/
 ├── index.html                          ← the standalone site (GitHub Pages entry point)
 ├── README.md
 ├── ATTRIBUTION.md
@@ -20,7 +19,6 @@ olemiss-academic-integrity-icons/
 ├── scorm/                              ← SCORM source (the page + manifest)
 │   ├── imsmanifest.xml
 │   └── index.html
-└── olemiss-integrity-icons-scorm.zip   ← importable SCORM 1.2 package for Blackboard
 ```
 
 ## The icon set
