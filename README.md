@@ -6,6 +6,8 @@ institutions, restyled in University of South Alabama colors, and extended with 
 than a simple yes/no. The **AI** category is driven by the
 [AI Assessment Scale (AIAS)](https://aiassessmentscale.com/).
 
+Source: https://github.com/mwatkins03-netizen/Academic-Integrity-Icons-Claude-4.8-/tree/main
+
 ## What's in here
 
 ```
