@@ -15,12 +15,9 @@ academic_integrity_icons_usa/
 ├── index.html                          ← the standalone site (GitHub Pages entry point)
 ├── README.md
 ├── ATTRIBUTION.md
-├── blackboard/
-│   ├── sample-embed.html               ← a ready-made example snippet to copy
-│   └── EMBED-INSTRUCTIONS.md           ← step-by-step for both Blackboard methods
-├── scorm/                              ← SCORM source (the page + manifest)
-│   ├── imsmanifest.xml
-│   └── index.html
+├── icons/
+│   ├── visual icons
+│   
 ```
 
 ## The icon set
