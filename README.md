@@ -45,12 +45,11 @@ format/structure. The AI badges use the AIAS 1–5 color scale and show the leve
 3. Live at `https://<username>.github.io/<repo>/`. Faculty open it, build a badge set, and
    copy the HTML or download an image.
 
-### 2. Inside a Blackboard course
-- **Paste HTML:** build a set on the site → **Copy HTML for Blackboard** → paste via the
+### 2. Inside a Canvas course
+- **Paste HTML:** build a set on the site → **Copy HTML for Canvas** → paste via the
   editor's source-code (`<>`) button. Works on Ultra and Original.
 - **SCORM import:** upload `olemiss-integrity-icons-scorm.zip` as a SCORM content package.
 
-Full steps: see `blackboard/EMBED-INSTRUCTIONS.md`.
 
 ## Customizing
 
