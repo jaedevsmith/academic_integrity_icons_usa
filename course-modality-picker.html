@@ -143,7 +143,7 @@
 
 <div class="header">
   <h1>Course Modality Picker</h1>
-  <p>University of South Alabama &bull; Find the course format that fits how you learn</p>
+  <p>University of South Alabama &bull; Find the course format that sets you up for success!</p>
 </div>
 
 <div class="wrap">
@@ -201,7 +201,7 @@
 // ===== Modality data (from the USA ILC chart, April 2025) =====
 const MODALITIES = {
   onCampus: {
-    name: "On Campus",
+    name: "Campus Traditional",
     meetings: "Regularly scheduled meeting times on the main campus or an approved off-campus instructional site",
     attendance: "Always",
     onlineWork: "Occasionally",
@@ -209,7 +209,7 @@ const MODALITIES = {
     target: "Students who thrive in structured, traditional classroom settings with face-to-face student and instructor interactions, have regular schedules that accommodate fixed meeting times, and have easy access to campus."
   },
   onCampusHybrid: {
-    name: "On Campus Hybrid",
+    name: "Campus Hybrid",
     meetings: "Combination of regularly scheduled meeting times and online coursework",
     attendance: "Reduced",
     onlineWork: "Regularly",
@@ -217,7 +217,7 @@ const MODALITIES = {
     target: "Students who desire a structured, traditional classroom setting with face-to-face interactions, but are also self-directed to complete online work, have schedules that accommodate occasional fixed meeting times, and easy access to campus."
   },
   onlineSync: {
-    name: "Online Synchronous",
+    name: "Remote Scheduled",
     meetings: "Regularly scheduled meeting times — online",
     attendance: "Always",
     onlineWork: "Occasionally",
@@ -225,7 +225,7 @@ const MODALITIES = {
     target: "Students who have regular schedules that accommodate fixed meeting times online, have access to reliable technology, are comfortable in online learning environments, desire online interactions with instructor and students, and are self-directed to complete online work."
   },
   onlineHybrid: {
-    name: "Online Hybrid",
+    name: "Remote Hybrid",
     meetings: "Combination of regularly scheduled meeting times via Zoom and online coursework",
     attendance: "Reduced",
     onlineWork: "Regularly",
@@ -233,7 +233,7 @@ const MODALITIES = {
     target: "Students who are comfortable in online learning environments, have access to reliable technology, and have schedules that accommodate occasional meeting times online."
   },
   onlineAsync: {
-    name: "Online Asynchronous",
+    name: "Remote Independent",
     meetings: "No scheduled meeting times; all coursework is completed online",
     attendance: "Never",
     onlineWork: "Always",
@@ -241,7 +241,7 @@ const MODALITIES = {
     target: "Students who are comfortable in online learning environments, have schedules that do not accommodate fixed meeting times, and have access to reliable technology. Best suited for self-directed learners who need schedule flexibility or prefer to learn at their own pace."
   },
   hyflex: {
-    name: "HyFlex",
+    name: "Multi-Access",
     meetings: "On campus or online at scheduled meeting times, or asynchronous — student choice",
     attendance: "Student Choice",
     onlineWork: "Regularly",
